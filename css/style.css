@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,ol{
+    list-style-type: none;
+}
+
+.main{
+    height: 660px;
+    width: 700px;
+    margin: auto;
+    background-image: url(../images/1.jpg);
+    position: relative;
+}
+.common{
+    height: 200px;
+    width: 200px;
+}
+.one{
+    position: absolute;
+    background-image: url(../images/2.png);
+    animation-name: onediv;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    float: left;
+  
+
+}
+.two{
+    position: absolute;
+    background-image: url(../images/3.jpg);
+    animation-name: twodiv;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+.three{
+    position: absolute;
+    background-image: url(../images/4.png);
+    animation-name: threediv;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+.four{
+    position: absolute;
+    background-image: url(../images/5.png);
+    animation-name: fourdiv;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes onediv{
+    0%{
+        left: 0;
+        right: 0;
+    }
+    25%{
+        left: 200px;
+        top:0;
+    }
+    50%{
+         top: 200px;
+         left: 200px;
+    }
+    75%{
+        left: 0;
+        top: 200px;
+    }
+    100%{
+        left: 0;
+        top:0;
+    }
+}
+@keyframes twodiv{
+    0%{
+        right: 0;
+        top: 0;
+    }
+    25%{
+        right: 130px;
+        top:0;
+    }
+    50%{
+         top: 200px;
+         right: 130px;
+    }
+    75%{
+        right: 0;
+        top: 200px;
+    }
+    100%{
+        right: 0;
+        top:0;
+    }
+}
+@keyframes threediv{
+    0%{
+        left: 0;
+        bottom: 0;
+    }
+    25%{
+        left: 200px;
+        bottom:0;
+    }
+    50%{
+         bottom: 100px;
+         left: 200px;
+    }
+    75%{
+        left: 0;
+        bottom: 100px;
+    }
+    100%{
+       left: 0;
+        bottom:0;
+    }
+}@keyframes fourdiv{
+    0%{
+        right: 0;
+        bottom: 0;
+    }
+    25%{
+        right: 130px;
+        bottom:0;
+    }
+    50%{
+         bottom: 100px;
+         right: 130px;
+    }
+    75%{
+        right: 0;
+        bottom: 100px;
+    }
+    100%{
+        right: 0;
+        bottom:0;
+    }
+}
